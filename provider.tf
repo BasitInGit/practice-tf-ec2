@@ -6,6 +6,12 @@ terraform {
       version = "~>4.0"
     }
   }
+
+  backend "s3" {
+    bucket = "basset-terraform-state"
+    region = "eu-west-2"
+    key    = "practice-tf-ec2/terraform.tfstate"
+  }
 }
 
 provider "aws" {
