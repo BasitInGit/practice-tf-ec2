@@ -21,3 +21,9 @@ variable "vpc_id" {
   description = "vpc_id"
   default     = "vpc-0e00f24a7f3ad70c6"
 }
+
+variable "environment" {
+  type = string
+  description = "environment"
+  default = "dev"
+}
